@@ -1,0 +1,15 @@
+{
+  "name": "downloadimages",
+  "version": "1.0.0",
+  "description": "Read Url from csv file and download images to local storage from that Url.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jacob Lin",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parse": "^4.15.0",
+    "image-downloader": "^4.0.2"
+  }
+}
