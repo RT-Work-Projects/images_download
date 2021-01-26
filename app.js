@@ -4,12 +4,13 @@ const download = require('image-downloader');
 
 let options = {};
 
-fs.createReadStream('data.csv')
+fs.createReadStream('data2.csv')
     .pipe(csv())
     .on('data', (row) => {
+        // console.log(row);
         options = {
             url: row[1],
-            dest: `./images/${row[0]}.jpg`
+            dest: `./images/${row[0]}`
         }
 
         download.image(options)
